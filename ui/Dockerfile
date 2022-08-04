@@ -1,5 +1,5 @@
 FROM node:14-alpine3.14 as build
-ENV REACT_APP_NETWORK=gnosis
+ENV REACT_APP_NETWORK=chiado
 WORKDIR /app
 RUN apk update && apk add git && git clone https://github.com/dappnode/eth2-keymanager-frontend-dappnode-temporary.git
 WORKDIR /app/eth2-keymanager-frontend-dappnode-temporary

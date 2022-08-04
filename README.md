@@ -26,9 +26,9 @@ Rquirements to run DAppNode package for Werb3signer
 
 <!--Requirements to run the dappnode package in a list: -->
 
-- **Validator**: set up your validator at [https://prater.launchpad.ethereum.org/](https://docs.gnosischain.com/validator-info/validator-deposits)
+- **Validator**: set up your validator at [https://prater.launchpad.ethereum.org/](https://docs.chiadochain.com/validator-info/validator-deposits)
 - **Ethereum1 client**: you should have installed and synced an Eth1 client from Gosis chain such as nethermind
-- **Ethereum2 client**: you should have installed and synced an Eth2 client from Gnosis chain such as Prysm-gnosis
+- **Ethereum2 client**: you should have installed and synced an Eth2 client from chiado chain such as Prysm-chiado
 
 ### Manteinance
 

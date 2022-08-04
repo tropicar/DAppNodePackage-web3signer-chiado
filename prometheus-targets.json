@@ -1,9 +1,9 @@
 [
   {
     "labels": {
-      "package": "web3signer-gnosis.dnp.dappnode.eth",
-      "service": "web3signer.web3signer-gnosis.dappnode"
+      "package": "web3signer-chiado.dnp.dappnode.eth",
+      "service": "web3signer.web3signer-chiado.dappnode"
     },
-    "targets": ["web3signer.web3signer-gnosis.dappnode:9091"]
+    "targets": ["web3signer.web3signer-chiado.dappnode:9091"]
   }
 ]

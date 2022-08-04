@@ -5,17 +5,17 @@ CLIENTS_TO_REMOVE=("$@")
 for client in "${CLIENTS_TO_REMOVE[@]}"; do
   case "$client" in
   "prysm")
-    CLIENT_API="http://validator.gnosis-beacon-chain-prysm.dappnode:3500"
+    CLIENT_API="http://validator.chiado-beacon-chain-prysm.dappnode:3500"
     TOKEN_FILE="/security/prysm/auth-token"
     CERT_REQUEST=""
     ;;
   "teku")
-    CLIENT_API="https://validator.teku-gnosis.dappnode:3500"
+    CLIENT_API="https://validator.teku-chiado.dappnode:3500"
     TOKEN_FILE="/security/teku/validator-api-bearer"
     CERT_REQUEST="-k --cert-type P12 --cert /security/teku/cert/teku_client_keystore.p12:dappnode"
     ;;
   "lighthouse")
-    CLIENT_API="http://validator.lighthouse-gnosis.dappnode:3500"
+    CLIENT_API="http://validator.lighthouse-chiado.dappnode:3500"
     TOKEN_FILE="/security/lighthouse/api-token.txt"
     CERT_REQUEST=""
     ;;

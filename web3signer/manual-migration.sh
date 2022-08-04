@@ -47,7 +47,7 @@ function ensure_requirements() {
   # Check if web3signer is available: https://consensys.github.io/web3signer/web3signer-eth2.html#tag/Server-Status
   if [ "$(curl -s -X GET \
     -H "Content-Type: application/json" \
-    -H "Host: prysm.migration-gnosis.dappnode" \
+    -H "Host: prysm.migration-chiado.dappnode" \
     --write-out '%{http_code}' \
     --silent \
     --output /dev/null \
@@ -69,7 +69,7 @@ function ensure_requirements() {
 # - Docs: https://consensys.github.io/web3signer/web3signer-eth2.html#operation/KEYMANAGER_IMPORT
 function import_validators() {
   # Import one by one. See https://github.com/dappnode/web3signer-import-one-by-one
-  import-one-by-one --keystores-path "$MANUAL_MIGRATION_DIR" --wallet-password-path "$BACKUP_WALLETPASSWORD_FILE" --network gnosis
+  import-one-by-one --keystores-path "$MANUAL_MIGRATION_DIR" --wallet-password-path "$BACKUP_WALLETPASSWORD_FILE" --network chiado
   echo "${INFO} validators imported"
 }
 

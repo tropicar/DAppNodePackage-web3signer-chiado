@@ -78,7 +78,6 @@ disown
 # - Run key manager (it may change in the future): --key-manager-api-enabled=true
 exec /opt/web3signer/bin/web3signer \
   --key-store-path="$KEYFILES_DIR" \
-  --config-file=/usr/config.yaml \
   --http-listen-port=9000 \
   --http-listen-host=0.0.0.0 \
   --http-host-allowlist="web3signer.web3signer-chiado.dappnode,web3signer.web3signer-chiado.dappnode,prysm.migration-chiado.dappnode,$ETH2_CLIENT_DNS" \
@@ -89,7 +88,7 @@ exec /opt/web3signer/bin/web3signer \
   --metrics-host-allowlist="*" \
   --idle-connection-timeout-seconds=90 \
   eth2 \
-  --network=gnosis \
+  --network=/usr/config.yaml \
   --slashing-protection-db-url=jdbc:postgresql://postgres.web3signer-chiado.dappnode:5432/web3signer-chiado \
   --slashing-protection-db-username=postgres \
   --slashing-protection-db-password=chiado \
